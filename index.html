@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Desarrollo Web II</title>
+        <title>Node.js</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -10,21 +10,78 @@
         <script type='text/javascript' src="index.js"></script>
     </head>
     <body>
-        <div>Desarrollo Web II</div>
-        <div><em class="smaller">Gerardo Munguía</em></div>
-
         <div>
           Node.js
+        </div>
+
+        <div><em class="smaller">Gerardo Munguía</em></div>
+
+        <div>Historia</div>
+
+        <div>
+          Pasado
+          <ul>
+            <li><em>Proyecto personal (2009) 🤓</em></li>
+            <li>NPM (2010)</li>
+            <li>Financiación privada (2010)</li>
+            <li>io.js (2014)</li>
+            <li>Node.js Foundation (2015)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Proyecto personal (2009) -- Ryan Dahl</h3>
+          &nbsp;
+          <img src="./img/ryan.png" />
         </div>
 
         <div>
           Pasado
           <ul>
-            <li>Proyecto personal (2009)</li>
-            <li>NPM (2010)</li>
+            <li>Proyecto personal (2009) 🤓</li>
+            <li><em>NPM (2010) 🤓</em></li>
             <li>Financiación privada (2010)</li>
+            <li>io.js (2014</li>
+            <li>Node.js Foundation (2015)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>NPM (2010) -- Isaac Z. Schlueter</h3>
+          &nbsp;
+          <img src="./img/isaac.png" />
+        </div>
+
+        <div>
+          Pasado
+          <ul>
+            <li>Proyecto personal (2009) 🤓</li>
+            <li>NPM (2010) 🤓</li>
+            <li>Financiación privada (2010) 💵</li>
             <li>io.js (2014)</li>
             <li>Node.js Foundation (2015)</li>
+          </ul>
+        </div>
+
+        <div>
+          Pasado
+          <ul>
+            <li>Proyecto personal (2009) 🤓</li>
+            <li>NPM (2010) 🤓</li>
+            <li>Financiación privada (2010) 💵</li>
+            <li>io.js (2014) 🍴</li>
+            <li>Node.js Foundation (2015)</li>
+          </ul>
+        </div>
+
+        <div>
+          Pasado
+          <ul>
+            <li>Proyecto personal (2009) 🤓</li>
+            <li>NPM (2010) 🤓</li>
+            <li>Financiación privada (2010) 💵</li>
+            <li>io.js (2014) 🍴</li>
+            <li>Node.js Foundation (2015) 🎉</li>
           </ul>
         </div>
 
@@ -33,7 +90,7 @@
         <div>
           Presente
           <ul>
-            <li>v 10.13 (LTS)</li>
+            <li>v 10.14 (LTS), v 11.4 (current)</li>
             <li>Servidor web</li>
             <li>Aplicaciones de escritorio (<a href="https://electronjs.org/">Electron</a>)</li>
             <li>Front-end devops</li>
@@ -56,51 +113,30 @@
         <div><img src="./img/mind-map-focus-frameworks.png" /></div>
 
         <div>
+          &lt;code&gt;
+        </div>
+
+        <div>
+          <div>Hello 🌍</div>
+          <div class="smaller">
+            <a href="https://github.com/gmunguia/demo-uneat">
+              </br>github.com/gmunguia/demo-uneat
+            </a>
+          </div>
+        </div>
+
+        <div>
           <pre>
             package.json
 
             {
               "engines": {
-                "node": "&gt;=8.12.0"
+                "node": "&gt;=10.4.0"
               },
               "dependencies": {
                 "express": "^4.16.3"
               }
             }
-          </pre>
-        </div>
-
-        <div>
-          &lt;code&gt;
-        </div>
-
-        <div>
-          <div>
-            <a href="https://github.com/gmunguia/demo-uneat">
-              </br>github.com/gmunguia/demo-uneat
-            </a>
-          </div>
-          <pre>
-            $&gt; git init
-            $&gt; npm init -y
-            $&gt; npm install express
-            $&gt; echo 'node_modules/' &gt; .gitignore
-          </pre>
-        </div>
-
-        <div><div class="smaller">Hello 🌍</div></div>
-
-        <div>
-          index.js
-          <pre>
-            + const express = require("express");
-            + const server = express();
-            +
-            + server.get("/hello", (req, res) =&gt; { 
-            +   res.send("Hello world, from UnEAt"); 
-            + });
-            +
-            + server.listen(3000);
           </pre>
         </div>
 
@@ -114,294 +150,6 @@
           </em>
         </div>
 
-        <div>Echo 🏢))) (((🚶</div>
-
-        <div>
-          index.js
-          <pre>
-            + const bodyParser = require("body-parser");
-             
-              const server = express();
-            + server.use(bodyParser.json());
-            +
-            ...
-            + server.post("/echo", (req, res) =&gt; { 
-            +   res.json(req.body); 
-            + });
-          </pre>
-        </div>
-
-        <div>
-          Demo:
-          <em>Game of Life</em>
-        </div>
-
-        <div>
-          API
-          <pre>
-            GET  /life
-            POST /life
-            POST /life/next
-          </pre>
-        </div>
-        
-        <div>
-          API
-          <pre>
-            <em>GET  /life
-            POST /life</em>
-            POST /life/next
-          </pre>
-        </div>
-
-        <div>
-          index.js
-          <pre>
-            + let life = [];
-            +
-            + server.get("/life", (req, res) =&gt; {
-            +   res.json(life);
-            + });
-            +
-            + server.post("/life", (req, res) =&gt; {
-            +   life = req.body;
-            +   res.json(life);
-            + });
-          </pre>
-        </div>
-
-        <div>
-          API
-          <pre>
-            GET  /life
-            POST /life
-            <em>POST /life/next</em>
-          </pre>
-        </div>
-
-        <div>
-          index.js
-          <pre>
-            + const nextGeneration = life =&gt; 
-            + ...
-            +
-            + server.post("/life/next", (req, res) =&gt; {
-            +   life = nextGeneration(life);
-            +   res.json(life);
-            + });
-          </pre>
-        </div>
-
-        <div>
-          Estructura
-          <pre>
-          demo-api/
-          │
-          ├─ services/
-          │  └─ gameOfLife.js
-          │
-          ├─ models/
-          │  └─ life.js
-          │
-          ├─ controllers/
-          │  └─ life.js
-          │
-          ├─ routes/
-          │  └─ life.js
-          │
-          └─ index.js
-          </pre>
-        </div>
-
-        <div>
-          Estructura
-          <pre>
-          demo-api/
-          │
-          <em>├─ services/
-          │  └─ gameOfLife.js</em>
-          │
-          ├─ models/
-          │  └─ life.js
-          │
-          ├─ controllers/
-          │  └─ life.js
-          │
-          ├─ routes/
-          │  └─ life.js
-          │
-          └─ index.js
-          </pre>
-        </div>
-
-        <div>
-          index.js
-          <pre>
-            - const nextGeneration = life =&gt;
-            - ...
-          </pre>
-          services/gameOfLife.js
-          <pre>
-            + const nextGeneration = life =&gt;
-            + ...
-            + module.exports = { nextGeneration };
-          </pre>
-        </div>
-
-        <div>
-          Estructura
-          <pre>
-          demo-api/
-          │
-          ├─ services/
-          │  └─ gameOfLife.js
-          │
-          <em>├─ models/
-          │  └─ life.js</em>
-          │
-          ├─ controllers/
-          │  └─ life.js
-          │
-          ├─ routes/
-          │  └─ life.js
-          │
-          └─ index.js
-          </pre>
-        </div>
-
-        <div>
-          index.js
-          <pre>
-            - let life = [
-            - ...
-            - ];
-          </pre>
-          models/life.js
-          <pre>
-            + let life = [
-            + ...
-            + ];
-            + 
-            + const get = () =&gt; life;
-            + const set = newLife =&gt; {
-            +   life = newLife;
-            + };
-            + 
-            + module.exports = { get, set };
-          </pre>
-        </div>
-
-        <div>
-          Estructura
-          <pre>
-          demo-api/
-          │
-          ├─ services/
-          │  └─ gameOfLife.js
-          │
-          ├─ models/
-          │  └─ life.js
-          │
-          <em>├─ controllers/
-          │  └─ life.js</em>
-          │
-          ├─ routes/
-          │  └─ life.js
-          │
-          └─ index.js
-          </pre>
-        </div>
-
-        <div>
-          index.js
-          <pre>
-            - server.post("/life", (req, res) =&gt; {
-            -   life = req.body;
-            -   res.json(life);
-            - });
-            - ...
-          </pre>
-          controllers/life.js
-          <pre>
-            + const lifeModel = require("../models/life.js");
-            + const gameOfLife = require("../services/gameOfLife.js");
-            +
-            + const update = (req, res) =&gt; {
-            +   lifeModel.set(req.body);
-            +   res.json(lifeModel.get());
-            + };
-            + ...
-            + module.exports = { update, get, next };
-          </pre>
-        </div>
-
-        <div>
-          Estructura
-          <pre>
-          demo-api/
-          │
-          ├─ services/
-          │  └─ gameOfLife.js
-          │
-          ├─ models/
-          │  └─ life.js
-          │
-          ├─ controllers/
-          │  └─ life.js
-          │
-          <em>├─ routes/
-          │  └─ life.js</em>
-          │
-          └─ index.js
-          </pre>
-        </div>
-
-        <div>
-          index.js
-          <pre>
-            - server.post("/life", (req, res) =&gt; {
-            -   life = req.body;
-            -   res.json(life);
-            - });
-            - ...
-
-            + const lifeRoutes = require("./routes/life.js");
-            + server.use("/life", lifeRoutes);
-          </pre>
-          routes/life.js
-          <pre>
-            + const express = require("express");
-            + const lifeController = require("../controllers/life.js");
-            +
-            + const router = express.Router();
-            +
-            + router.get("/", lifeController.get);
-            + ...
-            + module.exports = router;
-          </pre>
-        </div>
-
-        <div>
-          Estructura
-          <pre>
-          demo-api/
-          │
-          ├─ services/
-          │  └─ gameOfLife.js
-          │
-          ├─ models/
-          │  └─ life.js
-          │
-          ├─ controllers/
-          │  └─ life.js
-          │
-          ├─ routes/
-          │  └─ life.js
-          │
-          └─ index.js
-          </pre>
-        </div>
-
         <div>
           Mas información:
           <ul>
@@ -411,5 +159,6 @@
             <li>Mi email: gerardo.munguia.hoyo@gmail.com</li>
           </ul>
         </div>
+
     </body>
 </html>
